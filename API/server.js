@@ -5,8 +5,13 @@ const { readFile } = require('fs').promises;
 const PORT = process.env.PORT || 3000;
 
 app.get('/', async (req, res) => {
-    
-    res.send(await readFile('./index.html', 'utf8'));
+    try {
+        const htmlPath = path.join(__dirname, '..', 'index.html');
+        const html = await readFile(htmlPath, 'utf8');
+        res.send(html);
+    } catch (err) {
+        res.status(500).send('Error loading HTML file.');
+    }
 });
     
 app.listen(PORT, () => {
