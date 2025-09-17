@@ -10,4 +10,6 @@ function ToFiles() {
 function ToLibrary() {
     window.location.href = 'library.html';
 }
-
+function ToManifesto() {
+    window.location.href = 'Manifesto.html';
+}

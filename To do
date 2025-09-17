@@ -1,15 +1,25 @@
 create html for
-CV . res.download
+        CV . res.download
+            Animate it: https://webdesign.tutsplus.com/21-ridiculously-impressive-html5-canvas-experiments--net-14210a
+            https://alvarotrigo.com/blog/css-animations-scroll/
+            https://www.youtube.com/watch?v=z2LQYsZhsFw
+
+
 Picture album
 File sharing
 Anime library
 Book library
 
 
+git add .
+git commit -m "message"
+git push origin main
+
 https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-area
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology
 
 https://www.skillshare.com/en/search?query=CV
+https://www.skillshare.com/en/classes/the-ultimate-resume-cv-course-from-linkedin-to-ats-to-interview-get-the-job/433802277?via=search-layout-grid
 
 https://www.skillshare.com/en/classes/quality-assurance-testing-from-scratch-to-finish/1703166619?via=search-layout-grid
 https://www.skillshare.com/en/classes/certified-lean-six-sigma-white-belt/246985446?via=search-layout-grid
