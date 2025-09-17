@@ -1,0 +1,71 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    height: 100vh; /* Optional: makes grid fill the viewport */
+}
+    
+.nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    padding: 20px;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.button-80 {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(60, 80, 180, 0.08);
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.button-80:hover, .button-80:focus {
+    background: linear-gradient(90deg, #4338ca 0%, #2563eb 100%);
+    transform: translateY(-2px) scale(1.03);
+    outline: none;
+}
+
+
+
+.selfieHP {
+    grid-column: 7 / 9;
+    grid-row: 1 / 4;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.selfieCV {
+    grid-column: 7 / 9;
+    grid-row: 1 / 4;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.ProfPic {
+    width: 100%;
+    height: auto;
+}
+
+.tekst {
+    grid-column: 2 / 7;
+    grid-row: 1 / 4;
+    padding: 20px;
+}
+.parent > div {
+    border: 1px solid #ccc;
+}
