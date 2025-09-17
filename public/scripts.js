@@ -1,5 +1,5 @@
 function ToCV() {
-    window.location.href = '/cv.html';
+    window.location.href = 'cv.html';
 }
 function ToAlbum() {
     window.location.href = 'album.html';
