@@ -25,7 +25,7 @@ app.get('/cv', async (req, res) => {
     }
 });
 
-app.use(express.static(path.join(__dirname, '..', 'Public')));
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
