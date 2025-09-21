@@ -1,16 +1,26 @@
+.scroll-watcher{
+    height: 5px;
+    background-color: rgb(110, 36, 213);
+    border-radius: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin: auto;
+    top: 0;
+  }
+
+
 .parent {
     display: grid;
     grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 4px;
-    height: 100vh; /* Optional: makes grid fill the viewport */
+    height: 100vh;
 }
 
-/* .parent > div {
-    border: 1px solid #ccc;
-} */
-    
-.nav {
+
+
+.navgrid {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   display: flex;
@@ -21,6 +31,115 @@
   border-radius: 8px;
   color: #D1D7E0;
 }
+
+.parentcv {
+  
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+
+}
+
+.navalone {
+
+  display: flex;
+  flex-direction: column;
+  background: #1F1B2E;
+  padding: 20px;
+  gap: 16px;
+  border-radius: 8px;
+  color: #D1D7E0;
+
+
+  width: 10%;
+  margin-bottom: 24px;
+}
+
+.selfieCV {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.tekst-cv {
+  max-width: 700px;
+  padding: 40px;
+  margin: 0 auto;
+  color: #D1D7E0;
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
+
+.cv-tekstboks {
+  max-width: 800px;
+  padding: 48px;
+  margin: 100px auto;
+  color: #D1D7E0;
+  font-size: 1.45rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  text-align: left;
+  background-color: #433a5e;
+  border-left: 6px solid #802BB1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
+
+  transform: scale(0.9);
+  opacity: 40%;
+  
+  animation: fadeInZoom linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain;
+}
+
+@keyframes fadeInZoom {
+   from {
+    opacity: 40%;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+}
+
+
+.cv-education h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.education-item {
+  margin-bottom: 32px;
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #A84BD9;
+}
+
+.education-item ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.education-item ul li {
+  margin-bottom: 6px;
+}
+
 
 
 .button-80 {
@@ -58,13 +177,7 @@
     
 }
 
-.selfieCV {
-    grid-column: 7 / 9;
-    grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+
 
 .ProfPic {
   width: 100%;
@@ -133,13 +246,13 @@
     grid-template-rows: auto;
     display: block;
   }
-  .nav, .selfieHP, .tekstHP-1SQ, .tekstHP-2SQ, .tekstHP-3SQ {
+  .navgrid, .selfieHP, .tekstHP-1SQ, .tekstHP-2SQ, .tekstHP-3SQ {
     grid-column: auto;
     grid-row: auto;
     width: 100%;
     margin-bottom: 24px;
   }
-  .nav {
+  .navgrid {
     flex-direction: row;
     gap: 8px;
     justify-content: center;

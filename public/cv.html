@@ -5,23 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <style>
         body {
-            background-color: rgb(124, 9, 124);
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #2D283E; 
+        color: #D1D7E0;
         }
     </style>
 </head>
 <body>
-<div class="parent">
-    <div class="nav">
-        <button class="button-80" onclick="ToCV()">CV</button>
-        <button class="button-80" onclick="ToAlbum()">Picture Album</button>
-        <button class="button-80" onclick="ToFiles()">File Sharing</button>
-        <button class="button-80" onclick="ToLibrary()">Library</button>
+    <div className="scroll-watcher"></div>
+    <div class="parentcv">
+        <div class="navalone">
+            <button class="button-80" onclick="ToHome()">Home</button>
+            <button class="button-80" onclick="ToCV()">CV</button>
+            <button class="button-80" onclick="ToAlbum()">Picture Album</button>
+            <button class="button-80" onclick="ToFiles()">File Sharing</button>
+            <button class="button-80" onclick="ToLibrary()">Library</button>
+            <button class="button-80" onclick="Notes()">Notes</button>            
+            <button class="button-80" onclick="ToManifesto()">Manifesto</button>
 
+        </div>
+        
+        <div>
+            <h1 style="color: #edeaee; font-size: 45px; font-family: 'Poppins', sans-serif" ALIGN=CENTER>About me</h1>
+            <p class="tekst-cv">
+                I’m 22 years old and live alone. In my spare time I like to work out, meet friends, read and play video games, often with others as well. I’m especially drawn to games that require structured planning, process optimization and efficient workflows, as well as those that require cooperation and clear communication. Skills I bring to my academic and professional life.
+                I always greet new experiences and challenges with positive and open mind, just like the people I meet along the way.
+            </p>
+        </div>
+        <div class="selfieCV"><img class="ProfPic" src="images/SelfieNot.png"></div>
     </div>
-    <div class="selfieCV"><img class="ProfPic" src="images/SelfieNot.png"></div>
-    <div class="tekst">Curriculum Vitae</div>
+
+    
+    <div class="cv-tekstboks">
+  <h2>Education</h2>
+
+  <div class="education-item">
+    <h3>2023 – 2026</h3>
+    <p><strong>BSc HealthTech (Leadership, Organisation & Economy)</strong><br>
+    Technical University of Denmark (DTU)</p>
+    
+    <p>This education enables me to work with:</p>
+    <ul>
+      <li>Quality control and optimization (Lean, Six Sigma, ISO 9001)</li>
+      <li>Technological innovation in healthcare</li>
+      <li>Supply chain design and management</li>
+      <li>Website and IT development (Python, Node.js, HTML/CSS/JS)</li>
+      <li>Basic statistical analysis, anatomy, physiology, and electrical engineering</li>
+      <li>Group leadership and consultancy practices</li>
+      <li>Innovation practices (Double Diamond, CDIO)</li>
+      <li>Process management and documentation (Unified Process, work documentation)</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h3>2019 – 2022</h3>
+    <p><strong>High School Diploma in Theoretical & Mathematical Physics with Mechatronics</strong><br>
+    HTX Skjern</p>
+  </div>
+</div>
+
+<div class="cv-tekstboks">
+  <h2>Work Experience</h2>
+
+  <div class="education-item">
+    <h3>2022 – 2023</h3>
+    <p><strong>Operations Manager</strong><br>
+    SuperBrugsen Nørre Nebel, Sønder Omme State Prison Department</p>
+
+    <p>Areas of responsibility:</p>
+    <ul>
+      <li>Coordinated supply logistics and inventory keeping</li>
+      <li>Managed customer and staff conflict resolution</li>
+      <li>Managed difficult staff and customers, including conflict de-escalation and maintaining an effective workflow</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h3>2019 – 2022</h3>
+    <p><strong>Sales Assistant</strong><br>
+    SuperBrugsen Nørre Nebel</p>
+
+    <p>Areas of responsibility:</p>
+    <ul>
+      <li>Closing duty and management of closing staff</li>
+      <li>Replenished inventory and handled checkout operations</li>
+      <li>Ensured smooth customer service during peak hours</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-tekstboks">
+  <h2>Volunteer Work</h2>
+
+  <div class="education-item">
+    <h3>2022 – 2023</h3>
+    <p><strong>Floorball Coach, NNGU</strong></p>
+
+    <p>Areas of responsibility:</p>
+    <ul>
+      <li>Supported social development of adolescents</li>
+      <li>Designed structured training programs and fostered team spirit</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-tekstboks">
+  <h2>IT Qualifications</h2>
+
+  <div class="education-item">
+    <p><strong>Daily user:</strong> Microsoft Office, Google Drive package</p>
+    <p><strong>User:</strong> Visual Studio Code, RStudio, Maple, Mathcad, Fusion 360, Arduino</p>
+  </div>
+</div>
+
 
 </body>
 </html>
