@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/library.css">
     <script src="scripts/scripts.js" defer></script>
+        <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #2D283E; /* dark background */
+        color: #D1D7E0; /* light gray text */
+        }
+    </style>
 </head>
 <body>
-    <div class="parent">    
+    <div class="parent">
+        <h1 class="library-Text" id="libraryHeader">List of Books, Movies, Anime or Mange ive read/seen</h1>    
         <div class="navgrid">
             <button class="button-80" onclick="ToHome()">Home</button>
             <button class="button-80" onclick="ToCV()">CV</button>
@@ -20,16 +30,102 @@
             <button class="button-80" onclick="ToManifesto()">Manifesto</button>
         </div>
         <div class="mediaBTNS">
-            <button class="button-80" onclick="books()">Books</button>
-            <button class="button-80" onclick="movies()">Movies</button>
-            <button class="button-80" onclick="manga()">Manga</button>
-            <button class="button-80" onclick="anime()">Anime</button>
-
-
-
-
-
-
+            
+            <button class="button-80" onclick="showForm('books')">Books</button>
+            <button class="button-80" onclick="showForm('movies')">Movies</button>
+            <button class="button-80" onclick="showForm('manga')">Manga</button>
+            <button class="button-80" onclick="showForm('anime')">Anime</button>
+        </div>
+            <form class="inputForm manga" id="formManga">
+                <h1>Input Field for new reads</h1>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title"> 
+                <label for="Chapter">Chapter</label>
+                <input type="number" id="Chapter" name="Chapter">
+                <label for="Discription">Discription</label>
+                <input type="text" id="Discription" name="Discription">
+                <label for="Review">Review</label>
+                <input type="text" id="Review" name="Review">
+                <label for="TOLR">Time of last read</label>
+                <input type="date" id="TOLR" name="TOLR">
+                <input type="submit" value="Submit">
+            </form>
+            <form class="inputForm anime" id="formAnime">
+                <h1>Input Field for new watches</h1>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title">
+                <label for="Season">Season</label>
+                <input type="number" id="Season" name="Season">
+                <label for="Episodes">Episodes</label>
+                <input type="number" id="Episodes" name="Episodes">
+                <label for="Discription">Discription</label>
+                <input type="text" id="Discription" name="Discription">
+                <label for="Review">Review</label>
+                <input type="text" id="Review" name="Review">
+                <label for="TOLW">Time of last watch</label>
+                <input type="date" id="TOLW" name="TOLW">
+                <input type="submit" value="Submit">
+            </form>
+            <form class="inputForm books" id="formBooks">
+                <h1>Input Field for new reads</h1>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title"> <br>
+                <label for="Author">Author</label>
+                <input type="text" id="Author" name="Author">
+                <label for="Pages">Pages</label>
+                <input type="number" id="Pages" name="Pages">
+                <label for="Discription">Discription</label>
+                <input type="text" id="Discription" name="Discription">
+                <label for="Review">Review</label>
+                <input type="text" id="Review" name="Review">
+                <label for="Notes">Notes</label>
+                <input type="text" id="Notes" name="Notes">
+                <input type="submit" value="Submit">
+            </form>
+            <form class="inputForm movies" id="formMovies">
+                <h1>Input Field for new watches</h1>
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title">
+                <label for="Director">Director</label>
+                <input type="text" id="Director" name="Director">
+                <label for="Duration">Duration (minutes)</label>
+                <input type="number" id="Duration" name="Duration">
+                <label for="Discription">Discription</label>
+                <input type="text" id="Discription" name="Discription">
+                <label for="Review">Review</label>
+                <input type="text" id="Review" name="Review">
+                <label for="Notes">Notes</label>
+                <input type="text" id="Notes" name="Notes">
+                <input type="submit" value="Submit">
+            </form>
     </div>
 </body>
+<script>
+
+function showForm(type) {
+  document.querySelectorAll('.inputForm').forEach(f => f.style.display = 'none');
+  const header = document.getElementById("libraryHeader");
+
+switch (type) {
+    case 'books':
+      document.getElementById('formBooks').style.display = 'block';
+      header.textContent = "Liste af Bøger jeg har læst og mine anmeldelser";
+      break;
+    case 'movies':
+      document.getElementById('formMovies').style.display = 'block';
+      header.textContent = "Liste af Film jeg har set og mine anmeldelser";
+      break;
+    case 'manga':
+      document.getElementById('formManga').style.display = 'block';
+      header.textContent = "Liste af Manga jeg har læst og mine anmeldelser";
+      break;
+    case 'anime':
+      document.getElementById('formAnime').style.display = 'block';
+      header.textContent = "Liste af Anime jeg har set og mine anmeldelser";
+      break;
+  }
+}
+    
+
+</script>
 </html>

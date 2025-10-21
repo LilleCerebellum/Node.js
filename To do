@@ -7,8 +7,11 @@ create html for
 
 Picture album
 File sharing
-Anime library
-Book library
+
+Library
+- implement db
+-implement view
+
 manifesto
     Make central plain tekst area
 

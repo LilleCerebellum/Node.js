@@ -1,0 +1,129 @@
+.mediaBTNS {
+    grid-column: 0/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    padding: 48px;
+    margin: 100px auto;
+    color: #D1D7E0;
+    font-size: 1.45rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    background-color: #433a5e;
+    border-left: 6px solid #802BB1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.library-Text {
+    grid-column: 6/8;
+    grid-row: 1/2;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    padding: 48px;
+    margin: 100px auto;
+    color: #D1D7E0;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    background-color: #433a5e;
+    border-left: 6px solid #802BB1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.inputForm {
+  grid-column: 1 / 9;
+  grid-row: 2 / 3;
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  background-color: #433a5e;
+  border-left: 6px solid #802BB1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 700px;
+  margin: 40px auto;
+  color: #D1D7E0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Label styling */
+.inputForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #A84BD9;
+  letter-spacing: 0.5px;
+}
+
+/* Text, number, and date inputs */
+.inputForm input[type="text"],
+.inputForm input[type="number"],
+.inputForm input[type="date"],
+.inputForm select,
+.inputForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2D283E;
+  color: #D1D7E0;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.inputForm input:focus,
+.inputForm select:focus,
+.inputForm textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #802BB1;
+  transform: scale(1.02);
+}
+
+/* Submit buttons */
+.inputForm input[type="submit"],
+.inputForm button[type="submit"] {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #802BB1 0%, #564F6F 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(128, 43, 177, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.inputForm input[type="submit"]:hover,
+.inputForm button[type="submit"]:hover {
+  background: linear-gradient(90deg, #A84BD9 0%, #802BB1 100%);
+  transform: translateY(-2px);
+}
+
+.inputForm.books {
+  border-left-color: #4CAF50; /* green accent for books */
+}
+
+.inputForm.movies {
+  border-left-color: #FF9800; /* orange accent */
+}
+
+.inputForm.manga {
+  border-left-color: #802BB1; /* purple accent */
+}
+
+.inputForm.anime {
+  border-left-color: #2196F3; /* blue accent */
+}
